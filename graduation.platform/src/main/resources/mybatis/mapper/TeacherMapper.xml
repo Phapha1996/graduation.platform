@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.glut.user.mapper.TeacherMapper">
+
+	<resultMap type="com.glut.domain.Teacher" id="TeacherBaseResult">
+		<id column="tid" property="id"/>
+		<result column="tnum" property="username"/>
+		<result column="tpassword" property="password"	/>
+		<result column="tname" property="name"/>
+		<result column="tcontact" property="contact"/>
+		<result column="tdescription" property="description"/>
+	</resultMap>
+	
+	<sql id="selectCondition">
+		<where>
+			<if test="username != null">
+			and TNUM = #{username}
+			</if>
+		</where>
+	</sql>
+	
+	<select id="findTeacher" resultMap="TeacherBaseResult" >
+		select * from TEACHER <include refid="selectCondition"></include>
+	</select>
+	
+	<sql id="updateColumn">
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="username != null and username.trim().length()>0">TNUM,</if>
+			<if test="name != null and name.trim().length()>0">TNAME,</if>
+			<if test="password != null and password.trim().length()>0">TPASSWORD,</if>
+			<if test="contact != null and contact.trim().length()>0">TCONTACT,</if>
+		</trim>
+	</sql>
+	<sql id="updateColumn">
+		<trim prefix="values(" suffix=")" suffixOverrides=",">
+			<if test="username != null and username.trim().length()>0">username,</if>
+			<if test="name != null and name.trim().length()>0">name,</if>
+			<if test="password != null and password.trim().length()>0">password,</if>
+			<if test="contact != null and contact.trim().length()>0">contact,</if>
+		</trim>
+	</sql>
+	<update id="updateTeacher" parameterType="com.glut.domain.Teacher">
+		update TEACHER<include refid="updateColumn"/><include refid="updateColumn"/> where TID = #{id};
+	</update>
+</mapper>

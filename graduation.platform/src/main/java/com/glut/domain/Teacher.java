@@ -31,5 +31,11 @@ public class Teacher extends User{
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", contact=" + contact + ", description=" + description + ", id=" + id
+				+ ", username=" + username + ", password=" + password + "]";
+	}
+	
 	
 }

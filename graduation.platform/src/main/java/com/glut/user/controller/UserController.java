@@ -2,7 +2,6 @@ package com.glut.user.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.glut.domain.User;
 import com.glut.dto.Response;
 import com.glut.user.service.UserService;
-import com.glut.utils.Md5Utils;
 /**
  * 
  * @author Caizhf
@@ -43,9 +41,9 @@ public class UserController {
 //		password = Md5Utils.toMD5(password);
 		User user = userService.signInByUserType(userType,username,password);
 		if(user==null)
-			return Response.success("账号或密码错误");
+			return Response.success("账号或密码错误");		
 		req.getSession().setAttribute("user", user);
-		return Response.success(user);
+		return Response.success(user);	//		
 	}
 	
 	
