@@ -1,4 +1,9 @@
 package com.glut.domain;
+
+import javax.validation.constraints.NotNull;
+
+import com.glut.utils.MsgUtils;
+
 /**
  * 
  * @author Caizhf
@@ -12,8 +17,11 @@ package com.glut.domain;
 public class User {
 	
 	protected Integer id;
+	@NotNull(message = MsgUtils.Valid_MSG.USERNAME_NOT_NULL)
 	protected String username;
+	@NotNull(message = MsgUtils.Valid_MSG.PASSWORD_NOT_NULL)
 	protected String password;
+	@NotNull(message = MsgUtils.Valid_MSG.NAME_NOT_NULL)
 	protected String name;
 	
 	

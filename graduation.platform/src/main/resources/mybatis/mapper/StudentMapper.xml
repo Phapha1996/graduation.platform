@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.glut.user.mapper.StudentMapper">
+
+	<resultMap type="com.glut.domain.Student" id="StudentBaseMapped">
+		<id column="id" property="sid" />
+		<result column="username" property="snum" />
+		<result column="password" property="spassword" />
+		<result column="name" property="sname" />
+		<result column="sclass" property="sclass" />
+		<result column="contact" property="scontact" />
+		<association property="major" javaType="com.glut.domain.Major">
+			<id column="mid" property="mid" />
+			<result column="mname" property="mname" />
+			<result column="mdescription" property="mdescription" />
+		</association>
+	</resultMap>
+
+	<insert id="batchSave" parameterType="java.util.List">
+		INSERT INTO student(snum,spassword,sname,sclass,scontact,major_id) VALUES
+		<foreach collection="list" item="item" separator=",">
+			(#{item.username},#{item.password},#{item.name},#{item.sclass},#{item.contact},#{item.major.mid})
+		</foreach>
+	</insert>
+	
+	<insert id="save" parameterType="com.glut.domain.Student">
+		INSERT INTO student(snum,spassword,sname,sclass,scontact) 
+		VALUES(#{username},#{password},#{name},#{sclass},#{contact})
+	</insert>
+	
+	<select id="findById" parameterType="java.lang.Integer" resultMap="StudentBaseMapped">
+		SELECT * FROM student s LEFT JOIN major m ON s.major_id=m.mid
+		WHERE s.sid=#{id}
+	</select>
+	
+	<update id="updateById" parameterType="com.glut.domain.Student">
+		UPDATE student SET snum=#{username},spassword=#{password},sname=#{name},sclass=#{sclass}
+		scontact=#{contact}
+	</update>
+	
+	<delete id="deleteById" parameterType="java.lang.Integer">
+		DELETE FROM student WHERE sid=#{sid}
+	</delete>
+	
+	<select id="findAll" resultMap="StudentBaseMapped">
+		SELECT s.* FROM student s JOIN major m ON m.mid=s.major_id
+		LEFT JOIN select_topic st
+		<where>
+			<if test="snum!=null">
+				s.snum=#{snum}
+			</if>
+			<if test="sname!=null">
+				AND s.sname=#{sname}
+			</if>
+			<if test="majorId!=null">
+				AND m.mid=#{majorId}
+			</if>
+			<if test="isSelect!=null">
+				AND st.is_select=#{isSelect}
+			</if>
+		</where>
+	</select>
+
+</mapper>
