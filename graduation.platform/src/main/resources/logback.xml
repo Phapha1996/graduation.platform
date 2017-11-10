@@ -1,0 +1,57 @@
+<configuration>
+
+    <property name="log.path" value="./log"></property>
+    <property name="log.context" value="graduation"></property>
+    <property name="log.file.graduation.all" value="all_graduation"></property>
+    <property name="log.file.graduation.debug" value="debug_graduation"></property>
+
+    <!-- 设置上下文名称后,可以方便地区分来自不同应用程序的记录 -->
+    <contextName>${log.context}</contextName>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}][%-5level][%thread][%class.%method:%line]:%m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ALL_GRADUATION"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/${log.file.graduation.all}.log</file>
+        <!--<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+        <!--<level>INFO</level>-->
+        <!--<onMatch>ACCEPT</onMatch>-->
+        <!--<onMismatch>DENY</onMismatch>-->
+        <!--</filter>-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.path}/${log.file.graduation.all}-%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}][%-5level][%thread][%class.%method:%line]:%m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- name代表:该包名下的log会被打印-->
+    <!--现在保持和平台一致,所有log打在同一个文件,不分info和error了-->
+    <!--注意,STDOUT 只会打印com.yy下打出的日志.-->
+    <!--如果在生产环境,则要把root中的appender注释掉.否则会打印到控制台 ,debug时可以打开.-->
+    <logger name="com.glut" level="INFO" additivity="false">
+        <appender-ref ref="ALL_GRADUATION"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+   	<logger name="com.graduation.mapper" level="DEBUG" additivity="false">
+        <appender-ref ref="ALL_GRADUATION"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <!--打印任意包日志-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
