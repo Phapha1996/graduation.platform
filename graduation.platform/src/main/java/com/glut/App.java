@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  */
 @SpringBootApplication
-@MapperScan(basePackages="com.party.*.mapper")
+@MapperScan(basePackages="com.glut.*.mapper")
 @EnableTransactionManagement(proxyTargetClass=true)
 public class App {
 	public static void main(String[] args) {

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.glut.user.mapper.UserMapper">
+
+	<resultMap type="com.glut.domain.User" id="UserBaseMapped">
+		<id column="id" property="id"/>
+		<result column="username" property="username"/>
+		<result column="password" property="password"	/>
+		<result column="name" property="name"/>
+	</resultMap>
+	
+	<select id="findByUsernameAndPassword" resultMap="UserBaseMapped" >
+		<if test="userType==0">
+			SELECT s.sid id,s.sname name FROM student s WHERE s.snum=#{username} AND s.spassword=#{password}
+		</if>
+		<if test="userType==1">
+			SELECT t.tid id,t.tname name FROM teacher t WHERE t.num=#{username} AND t.tpassword=#{password}
+		</if>
+		<if test="userType==2">
+			SELECT s.seid id,s.seusername name FROM secretary s WHERE s.seusername=#{username} AND s.sepassword=#{password}
+		</if>
+		<if test="userType==3">
+			SELECT a.aid id,a.name FROM admin a WHERE a.username=#{username} AND a.password=#{password}
+		</if>
+	</select>
+</mapper>

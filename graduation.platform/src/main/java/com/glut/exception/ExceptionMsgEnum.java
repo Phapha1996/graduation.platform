@@ -4,7 +4,7 @@ package com.glut.exception;
  * @author Caizhf
  * @date 2017年6月11日下午3:08:39
  * @version v.0.1
- * @email 1115054416@qq.com 
+ * @email Caizhfy@163.com  
  *
  * <p>Description: 异常常量</p>
  *

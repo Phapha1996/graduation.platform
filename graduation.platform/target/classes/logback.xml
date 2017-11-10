@@ -45,7 +45,7 @@
         <appender-ref ref="ALL_GRADUATION"/>
         <appender-ref ref="STDOUT"/>
     </logger>
-   	<logger name="com.graduation.mapper" level="DEBUG" additivity="false">
+   	<logger name="com.glut.user.mapper" level="DEBUG" additivity="false">
         <appender-ref ref="ALL_GRADUATION"/>
         <appender-ref ref="STDOUT"/>
     </logger>
