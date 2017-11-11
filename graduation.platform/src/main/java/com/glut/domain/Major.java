@@ -12,8 +12,8 @@ package com.glut.domain;
 public class Major {
 	
 	private Integer mid;
-	private String name;		//专业名称
-	private String description; //描述
+	private String mname;		//专业名称
+	private String mdescription; //描述
 	
 	public Integer getMid() {
 		return mid;
@@ -21,17 +21,18 @@ public class Major {
 	public void setMid(Integer mid) {
 		this.mid = mid;
 	}
-	public String getName() {
-		return name;
+	
+	public String getMname() {
+		return mname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMname(String mname) {
+		this.mname = mname;
 	}
-	public String getDescription() {
-		return description;
+	public String getMdescription() {
+		return mdescription;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setMdescription(String mdescription) {
+		this.mdescription = mdescription;
 	}
 	
 }

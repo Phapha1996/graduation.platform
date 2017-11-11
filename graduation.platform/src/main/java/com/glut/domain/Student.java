@@ -1,4 +1,9 @@
 package com.glut.domain;
+
+import javax.validation.constraints.NotNull;
+
+import com.glut.utils.MsgUtils;
+
 /**
  * 
  * @author Caizhf
@@ -10,17 +15,11 @@ package com.glut.domain;
  *
  */
 public class Student extends User{
-	
-	private String name;	//名称
+	@NotNull(message=MsgUtils.Valid_MSG.CLASS_NOT_NULL)
 	private String sclass;	//班级
+	@NotNull(message=MsgUtils.Valid_MSG.CONTACT_NOT_NULL)
 	private String contact;	//联系方式（电话号码）
 	private Major major;	//所属专业
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	public String getSclass() {
 		return sclass;
 	}

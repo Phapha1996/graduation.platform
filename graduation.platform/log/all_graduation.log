@@ -1,107 +1,21 @@
-[2017-09-11 23:09:00][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 7860 (D:\kaifagongju\myeclipse2017\workspace\graduation.platform\target\classes started by Administrator in D:\kaifagongju\myeclipse2017\workspace\graduation.platform)
-[2017-09-11 23:09:00][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-09-11 23:09:13][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 15.841 seconds (JVM running for 23.629)
-[2017-09-11 23:14:08][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 4728 (D:\kaifagongju\myeclipse2017\workspace\graduation.platform\target\classes started by Administrator in D:\kaifagongju\myeclipse2017\workspace\graduation.platform)
-[2017-09-11 23:14:08][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-09-11 23:14:15][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 7.532 seconds (JVM running for 8.329)
-[2017-09-11 23:15:54][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 3096 (D:\kaifagongju\myeclipse2017\workspace\graduation.platform\target\classes started by Administrator in D:\kaifagongju\myeclipse2017\workspace\graduation.platform)
-[2017-09-11 23:15:54][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-09-11 23:16:01][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 7.839 seconds (JVM running for 8.544)
-[2017-11-10 15:35:25][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 7152 (C:\Users\Administrator\Desktop\graduation.platform\target\classes started by Administrator in C:\Users\Administrator\Desktop\graduation.platform)
-[2017-11-10 15:35:25][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 15:35:38][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 14.625 seconds (JVM running for 16.397)
-[2017-11-10 18:34:40][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 6800 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:34:40][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:35:37][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 6312 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:35:37][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:36:28][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 7144 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:36:28][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:36:37][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 9.567 seconds (JVM running for 10.245)
-[2017-11-10 18:46:02][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 18:46:02][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 18:46:02][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 18:46:02][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 18:46:02][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 123, org.apache.catalina.connector.RequestFacade@50f4bca, org.apache.catalina.connector.ResponseFacade@6c23a989]
-[2017-11-10 18:46:03][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@3f5e9c35
-[2017-11-10 18:46:03][INFO ][http-nio-8080-exec-2][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 1099
-[2017-11-10 18:46:38][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 7144 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:46:38][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:46:40][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 1.949 seconds (JVM running for 613.13)
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 123, org.apache.catalina.connector.RequestFacade@46a2698e, org.apache.catalina.connector.ResponseFacade@bd02258]
-[2017-11-10 18:46:46][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 18:46:46][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 123(String)
-[2017-11-10 18:46:46][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 0
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@7dbb79fa
-[2017-11-10 18:46:46][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 102
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 123, org.apache.catalina.connector.RequestFacade@46a2698e, org.apache.catalina.connector.ResponseFacade@bd02258]
-[2017-11-10 18:47:52][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 18:47:52][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 123(String)
-[2017-11-10 18:47:52][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 0
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@6a0f220a
-[2017-11-10 18:47:52][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 9
-[2017-11-10 18:48:18][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 7144 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:48:18][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:48:19][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 1.709 seconds (JVM running for 712.129)
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 444, org.apache.catalina.connector.RequestFacade@7d579f08, org.apache.catalina.connector.ResponseFacade@38550ec6]
-[2017-11-10 18:48:26][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 18:48:26][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 444(String)
-[2017-11-10 18:48:26][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 0
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@74bf63b3
-[2017-11-10 18:48:26][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 80
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 456, org.apache.catalina.connector.RequestFacade@7d579f08, org.apache.catalina.connector.ResponseFacade@38550ec6]
-[2017-11-10 18:48:29][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 18:48:29][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 456(String)
-[2017-11-10 18:48:29][DEBUG][http-nio-8080-exec-3][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 1
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@907aa3b
-[2017-11-10 18:48:29][INFO ][http-nio-8080-exec-3][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 16
-[2017-11-10 18:58:41][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 1308 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:58:41][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:58:48][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 7.352 seconds (JVM running for 8.002)
-[2017-11-10 18:59:47][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 1308 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 18:59:47][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 18:59:49][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 1.915 seconds (JVM running for 68.814)
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 456, org.apache.catalina.connector.RequestFacade@48c48c4b, org.apache.catalina.connector.ResponseFacade@615a7e16]
-[2017-11-10 19:00:16][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 19:00:16][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 456(String)
-[2017-11-10 19:00:16][DEBUG][http-nio-8080-exec-1][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 1
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@25ca011d
-[2017-11-10 19:00:16][INFO ][http-nio-8080-exec-1][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 582
-[2017-11-10 19:01:19][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 1308 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 19:01:19][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 19:01:21][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 1.782 seconds (JVM running for 160.797)
-[2017-11-10 19:01:42][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 5076 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 19:01:42][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 19:01:48][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 7.073 seconds (JVM running for 7.765)
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doBefore:44]:URL : http://127.0.0.1:8080/usr/signin
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doBefore:45]:HTTP_METHOD : GET
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doBefore:46]:IP : 127.0.0.1
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doBefore:47]:CLASS_METHOD : com.glut.user.controller.UserController.signIn
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doBefore:49]:ARGS : [3, 123, 456, org.apache.catalina.connector.RequestFacade@69e331b4, org.apache.catalina.connector.ResponseFacade@287670d]
-[2017-11-10 19:02:08][DEBUG][http-nio-8080-exec-7][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT a.aid id,a.name FROM admin a WHERE a.username=? AND a.password=? 
-[2017-11-10 19:02:08][DEBUG][http-nio-8080-exec-7][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 123(String), 456(String)
-[2017-11-10 19:02:08][DEBUG][http-nio-8080-exec-7][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 1
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doAfterReturning:55]:RESPONSE : com.glut.dto.Response@b54fb03
-[2017-11-10 19:02:08][INFO ][http-nio-8080-exec-7][com.glut.aop.WebLogAspect.doAfterReturning:56]:SPEND TIME : 533
-[2017-11-10 19:02:30][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 5076 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
-[2017-11-10 19:02:30][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
-[2017-11-10 19:02:32][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 1.971 seconds (JVM running for 51.592)
+[2017-11-11 09:43:20][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting StudentTest on USER-NGQ89M13OH with PID 5752 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
+[2017-11-11 09:43:20][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
+[2017-11-11 09:43:27][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started StudentTest in 7.743 seconds (JVM running for 9.553)
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT count(0) FROM student 
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 1
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT * FROM student limit ?,? 
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 0(Integer), 5(Integer)
+[2017-11-11 09:43:28][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 5
+[2017-11-11 09:44:35][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting StudentTest on USER-NGQ89M13OH with PID 6408 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
+[2017-11-11 09:44:35][INFO ][main][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
+[2017-11-11 09:44:43][INFO ][main][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started StudentTest in 8.405 seconds (JVM running for 10.781)
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT count(0) FROM student 
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 1
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==>  Preparing: SELECT * FROM student limit ?,? 
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:==> Parameters: 0(Integer), 5(Integer)
+[2017-11-11 09:44:54][DEBUG][main][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug:145]:<==      Total: 5
+[2017-11-11 10:01:50][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarting:48]:Starting App on USER-NGQ89M13OH with PID 3848 (started by Administrator in D:\gittest\必设选题系统\graduation.platform)
+[2017-11-11 10:01:50][INFO ][restartedMain][org.springframework.boot.SpringApplication.logStartupProfileInfo:659]:No active profile set, falling back to default profiles: default
+[2017-11-11 10:01:57][INFO ][restartedMain][org.springframework.boot.StartupInfoLogger.logStarted:57]:Started App in 8.085 seconds (JVM running for 8.89)
