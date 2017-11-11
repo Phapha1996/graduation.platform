@@ -52,23 +52,33 @@ public class StudentController {
 			// sql批处理将数据插入数据库
 			if (students != null && !students.isEmpty()) {
 				Integer number = studentService.batchInsert(students);
-				//返回影响数据库的记录数，若记录为零，提示用户未成功
+				// 返回影响数据库的记录数，若记录为零，提示用户未成功
 				return Response.success(number);
 			}
 		}
 		return Response.success(MsgUtils.ERROR_MSG.OPERATION_FAILUER);
 	}
 
-	
 	@RequestMapping("/add")
 	public Response save(@Valid Student student) {
-		//返回影响数据库的记录数，若记录为零，提示用户未成功
+		// 返回影响数据库的记录数，若记录为零，提示用户未成功
 		return Response.success(studentService.save(student));
 	}
 
+	/**
+	 * 多元查询
+	 * @param pageNum  起始页
+	 * @param pageSize 一页的记录数
+	 * @param isSelect 该学生是否已经选题（非必须）
+	 * @param major    该学生所属专业（非必须）
+	 * @param snum	      该学生学号（非必须）
+	 * @param sname	      该学生姓名 （非必须）
+	 * @return
+	 */
 	@RequestMapping("/list/{pageNum}")
-	public Response list(@PathVariable int pageNum,@RequestParam("pageSize")int pageSize) {
-		return Response.success(studentService.list(pageNum,pageSize));
+	public Response list(@PathVariable int pageNum, @RequestParam("pageSize") int pageSize,
+			Boolean isSelect,Integer major,String snum,String sname) {
+		return Response.success(studentService.list(pageNum, pageSize,isSelect,major,snum,sname));
 	}
 
 	@RequestMapping("/get/{sid}")
@@ -78,7 +88,7 @@ public class StudentController {
 
 	@RequestMapping("/update")
 	public Response update(@Valid Student student) {
-		//返回影响数据库的记录数，若记录为零，提示用户未成功
+		// 返回影响数据库的记录数，若记录为零，提示用户未成功
 		return Response.success(studentService.update(student));
 	}
 

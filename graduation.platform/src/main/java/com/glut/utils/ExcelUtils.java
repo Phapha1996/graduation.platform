@@ -15,6 +15,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.glut.domain.Major;
 import com.glut.domain.Student;
 
 /**
@@ -26,6 +27,7 @@ import com.glut.domain.Student;
  *
  *        <p>
  * 		Description: 读取excel文件所需方法
+ * 		请注意，excel格式从左到右必须为：用户名，密码，名字，班级，联系方式，专业
  *        </p>
  *
  *
@@ -175,6 +177,13 @@ public class ExcelUtils {
 								student.setContact(contact);
 							} else {
 								student.setContact(cell.getStringCellValue());// 联系方式
+							}
+						}else if (c == 5) {
+							if (cell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC) {
+								String majorName = dataFormatter.formatCellValue(cell);// 专业
+								student.setMajor(new Major(majorName));
+							} else {
+								student.setMajor(new Major(cell.getStringCellValue()));
 							}
 						}
 					}

@@ -31,6 +31,6 @@ public interface StudentService {
 
 	Integer delete(int sid);
 
-	PageBean<Student> list(int pageNum, int pageSize);
+	PageBean<Student> list(int pageNum, int pageSize, Boolean isSelect,Integer major,String snum,String sname);
 
 }

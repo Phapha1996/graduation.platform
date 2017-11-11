@@ -15,6 +15,20 @@ public class Major {
 	private String mname;		//专业名称
 	private String mdescription; //描述
 	
+	public Major(String mname){
+		this.mname = mname;
+	}
+	
+	
+	
+	public Major(Integer mid, String mname) {
+		super();
+		this.mid = mid;
+		this.mname = mname;
+	}
+
+
+
 	public Integer getMid() {
 		return mid;
 	}
@@ -34,5 +48,6 @@ public class Major {
 	public void setMdescription(String mdescription) {
 		this.mdescription = mdescription;
 	}
+	
 	
 }

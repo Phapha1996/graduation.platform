@@ -22,6 +22,7 @@ public interface StudentMapper {
 
 	Integer deleteById(int sid);
 
-	List<Student> findAll();
+	List<Student> findAll(@Param("isSelect")Boolean isSelect, 
+			@Param("majorId")Integer majorId, @Param("snum")String snum, @Param("sname")String sname);
 
 }

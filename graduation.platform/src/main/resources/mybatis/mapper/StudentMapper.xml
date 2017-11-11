@@ -19,9 +19,9 @@
 	</resultMap>
 
 	<insert id="batchSave" parameterType="java.util.List">
-		INSERT INTO student(snum,spassword,sname,sclass,scontact) VALUES
+		INSERT INTO student(snum,spassword,sname,sclass,scontact,major_id) VALUES
 		<foreach collection="list" item="item" separator=",">
-			(#{item.username},#{item.password},#{item.name},#{item.sclass},#{item.contact})
+			(#{item.username},#{item.password},#{item.name},#{item.sclass},#{item.contact},#{item.major.mid})
 		</foreach>
 	</insert>
 	
@@ -45,7 +45,22 @@
 	</delete>
 	
 	<select id="findAll" resultMap="StudentBaseMapped">
-		SELECT * FROM student
+		SELECT s.* FROM student s JOIN major m ON m.mid=s.major_id
+		LEFT JOIN select_topic st
+		<where>
+			<if test="snum!=null">
+				s.snum=#{snum}
+			</if>
+			<if test="sname!=null">
+				AND s.sname=#{sname}
+			</if>
+			<if test="majorId!=null">
+				AND m.mid=#{majorId}
+			</if>
+			<if test="isSelect!=null">
+				AND st.is_select=#{isSelect}
+			</if>
+		</where>
 	</select>
 
 </mapper>
